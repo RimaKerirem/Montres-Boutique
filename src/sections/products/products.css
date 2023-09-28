@@ -1,0 +1,68 @@
+.products {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.products .container {
+  background-color: var(--bg-light);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: var(--border-radius-medium);
+  -webkit-border-radius: var(--border-radius-medium);
+  -moz-border-radius: var(--border-radius-medium);
+  -ms-border-radius: var(--border-radius-medium);
+  -o-border-radius: var(--border-radius-medium);
+}
+
+.products .marks-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.products .marks-nav li {
+  background-color: var(--bg-dark);
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.products .marks-nav li:hover,
+.products .marks-nav li.active {
+  background-color: #333;
+  color: var(--green-color);
+}
+
+@media (min-width: 576px) {
+  .products .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .products .marks-nav li {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .products .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .products .marks-nav li {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+}

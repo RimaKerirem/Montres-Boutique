@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-dark: #1f2122;
+  --bg-light: #27292a;
+  --green-color: #009688;
+  --gray-color: #bdbdbd;
+  --border-radius-large: 20px;
+  --border-radius-medium: 10px;
+  --border-radius-small: 4px;
+  --padding: 60px;
+  --transition: 0.6s;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--gray-color);
+}
+
+::selection {
+  background-color: var(--green-color);
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+input:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 4px rgb(0 150 136 / 0.5);
+}
+
+.logo {
+  width: 130px;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}

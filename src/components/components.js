@@ -1,0 +1,10 @@
+export { default as Container } from "./container/Container";
+export { default as Contact } from "./contact/Contact";
+export { default as ProductCard } from "./product-card/ProductCard";
+export { default as PrimaryButton } from "./primary-button/PrimaryButton";
+export { default as SecondaryButton } from "./secondary-button/SecondaryButton";
+export { default as CartItem } from "./cart-item/CartItem";
+export { default as CloseButton } from "./close-button/CloseButton";
+export { default as Modal } from "./modal/Modal";
+export { default as ImgProduct } from "./img-product/ImgProduct";
+export { default as UpButton } from "./up-button/UpButton";

@@ -1,0 +1,33 @@
+.primary-button {
+  background-color: var(--green-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--green-color);
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+  cursor: pointer;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.primary-button:hover {
+  background-color: #333;
+  border-color: #333;
+  color: var(--green-color);
+}
+
+.primary-button.disabled {
+  cursor: not-allowed;
+  background-color: rgb(0 150 136 / 0.3);
+  border-color: rgb(0 150 136 / 0.3);
+}

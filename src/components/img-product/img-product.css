@@ -1,0 +1,10 @@
+.img-product {
+  width: 120px;
+}
+
+.img-product img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+}

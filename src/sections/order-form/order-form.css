@@ -1,0 +1,61 @@
+.order-form {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.order-form .form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .order-form .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .order-form .form {
+    width: 100%;
+  }
+}
+
+.order-form .form label,
+.order-form .form input,
+.order-form .form select {
+  width: 100%;
+}
+
+.order-form .form input,
+.order-form .form select {
+  margin: 5px 0 30px;
+  padding: 15px;
+  background-color: inherit;
+  border: 1px solid var(--gray-color);
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+  color: var(--green-color);
+  font-size: 16px;
+}
+
+.order-form .form input {
+  caret-color: var(--green-color);
+}
+
+.order-form .form select option {
+  background-color: var(--bg-dark);
+  color: var(--gray-color);
+}
+
+.order-form .form .delivery-price span {
+  color: var(--green-color);
+}
+
+.order-form .form .primary-button {
+  padding: 12px 0;
+  margin-top: 30px;
+  width: 100%;
+}

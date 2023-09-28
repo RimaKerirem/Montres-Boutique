@@ -1,0 +1,81 @@
+header {
+  background-color: var(--bg-dark);
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  z-index: 1;
+  box-shadow: 0 7px 10px 0 #333;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li a {
+  color: var(--gray-color);
+  font-size: 26px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: var(--green-color);
+  background-color: #333;
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li .number {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: -6px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 575px) {
+  header ul {
+    margin-left: 30px;
+  }
+
+  header ul li a {
+    font-size: 18px;
+    padding: 6px 12px;
+    margin-right: 10px;
+  }
+
+  header ul li .number {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    left: 25px;
+  }
+}

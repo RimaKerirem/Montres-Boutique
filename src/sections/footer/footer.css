@@ -1,0 +1,28 @@
+footer {
+  padding: 20px 0;
+  border-top: 2px solid var(--bg-light);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .contact {
+    margin-top: 30px;
+  }
+
+  footer .contact li a {
+    padding: 0 15px;
+  }
+
+  footer .contact li a span {
+    font-size: 13px;
+  }
+}
